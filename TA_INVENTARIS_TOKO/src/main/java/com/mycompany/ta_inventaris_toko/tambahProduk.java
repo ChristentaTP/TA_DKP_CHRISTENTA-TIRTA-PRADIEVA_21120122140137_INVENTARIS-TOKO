@@ -325,7 +325,7 @@ public class tambahProduk extends javax.swing.JFrame implements ActionListener {
     String hargaInput = KOTAKHARGA.getText();
 
     if (evt.getSource() == btTambah) {
-        if (nama.isEmpty()) {
+        if (nama.trim().isEmpty()) {
             JOptionPane.showMessageDialog(null, "Silahkan masukkan nama produk dengan benar!!!");
             return;
         }
