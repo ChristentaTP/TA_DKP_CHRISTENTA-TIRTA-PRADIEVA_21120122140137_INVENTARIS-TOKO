@@ -50,18 +50,6 @@ public class Database {
     public Integer[] getHargaProduk() {
         return hargaproduk.toArray(new Integer[0]);
     }
-
-    public String getProdukBaru() {
-        return produkbaru;
-    }
-
-    public int getJumlahBaru() {
-        return jumlahbaru;
-    }
-
-    public int getHargaBaru() {
-        return hargabaru;
-    }
     
     public void deleteProduk(String productName) {
         int index = produk.indexOf(productName); // Find the index of the product in the produk ArrayList
