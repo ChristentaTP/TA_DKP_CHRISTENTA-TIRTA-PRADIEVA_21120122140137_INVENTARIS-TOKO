@@ -329,7 +329,11 @@ public class tambahProduk extends javax.swing.JFrame implements ActionListener {
             JOptionPane.showMessageDialog(null, "Silahkan masukkan nama produk dengan benar!!!");
             return;
         }
-
+            // Check if the first letter is a hyphen (-)
+        if (nama.charAt(0) == '-') {
+            JOptionPane.showMessageDialog(null, "Nama produk tidak boleh dimulai dengan tanda strip (-)!!!");
+            return;
+        }
         int jumlah = 0;
         if (!jumlahInput.isEmpty() && jumlahInput.matches("\\d++")) {
             jumlah = Integer.parseInt(jumlahInput);
